@@ -20,19 +20,7 @@ export function initHeaderComp() {
                     <div class="burguer__item"></div>
                     <div class="burguer__item"></div>
                 </div>
-                <div class="intro__burguer">
-                    <div class="burguer-container">
-                       <h1 class="burguer-title">
-                            <a class="burguer-link" href="portfolio.html">Portfolio</a>
-                        </h1>
-                        <h1 class="burguer-title">
-                            <a class="burguer-link" href="services.html">Servicios</a>
-                        </h1>
-                        <h1 class="burguer-title">
-                            <a class="burguer-link" href="contact.html">Contacto</a>
-                        </h1>
-                    </div>
-                </div>
+                
             </div>
             `            
             
@@ -41,9 +29,10 @@ export function initHeaderComp() {
             .header-container {
                 heigth: 60px;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-item: center;
-                padding-bottom: 30px;
+                padding: 25px;
+                background-color: #15C6E1;
             }
             .burguer-container {
                 width: 36px;
@@ -52,6 +41,19 @@ export function initHeaderComp() {
                 gap: 7px;
                 cursor: pointer;
             }
+            .header__burguer {
+                width: 36px;
+                height: 32px;
+                display: grid;
+                gap: 7px;
+                cursor: pointer;
+            }
+            .burguer__item {
+                background-color: #000;
+                height: 6px;
+                width: 36px;
+            }
+            
 
             `;
 

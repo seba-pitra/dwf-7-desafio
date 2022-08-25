@@ -15,30 +15,28 @@ export function initTextComp() {
             style.textContent = `
             .title {
                 display:flex;
-                flex-direction:column
-                font-family: 'Acme', sans serif;
-                font-size: 52px;
-                font-weight: bold;
-                text-align: center;
-                color: #009048;
-                margin: 115px 0 0;
-            }
-            @media(min-width:769px) {
-                .title {
-                    margin-top: 145px;
-                }
-            }            
-            .body {
-                font-family: 'Acme', sans serif;
+                flex-direction:column;
                 font-size: 40px;
                 font-weight: bold;
                 text-align: center;
-                padding: 40px 20px 20px;
+                color: #000;
+                margin: 0;
             }
             @media(min-width:769px) {
-                .body {
-                    font-size: 55px;
+                .title {
                 }
+            }     
+            .subtitle {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            @media(min-width:769px) {
+                .subtitle {
+                    
+                }
+            }    
+            .body {
+                font-size: 20px;
             }`
             
             shadow.appendChild(div);

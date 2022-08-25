@@ -1,8 +1,5 @@
-import map from "lodash/map"
-import { json } from "express";
-
 // const API_BASE_URL = "https://piedra-papel-tijeras-juego.herokuapp.com";
-const API_BASE_URL = "https://localhost:3000";
+const API_BASE_URL = "http://localhost:3000";
  
 export const state = {
     data:{

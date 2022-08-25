@@ -4,7 +4,12 @@
 
 body {
     margin: 0;
-    background-color:#E5E5E5;
-    background-image: url("./images/fondo.png");
+    background-color: #fff;
     font-family: 'Poppins', sans-serif;
+}
+
+.pets-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

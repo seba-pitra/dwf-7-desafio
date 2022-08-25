@@ -5,13 +5,9 @@ import { updateProfile, getProfile } from "./controllers/users-controllers";
 
 const port = process.env.PORT || 3000;
 const app = express()
-const staticDirPath = path.resolve(__dirname, "../client")
+const staticDirPath = path.resolve(__dirname, "../dist")
 
-app.use(
-    express.json({
-        limit: "50mb",
-    })
-) 
+app.use( express.json({ limit: "50mb" }) ) 
 
 app.post("/profile",  async (req,res) => {
     if (!req.body) {
