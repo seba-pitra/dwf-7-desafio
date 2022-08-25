@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:#E5E5E5;
+    background-image: url("./images/fondo.png");
+    font-family: 'Poppins', sans-serif;
+}
