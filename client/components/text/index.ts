@@ -21,6 +21,7 @@ export function initTextComp() {
                 text-align: center;
                 color: #000;
                 margin: 0;
+                padding: 30px;
             }
             @media(min-width:769px) {
                 .title {
@@ -29,6 +30,7 @@ export function initTextComp() {
             .subtitle {
                 font-size: 20px;
                 font-weight: bold;
+                text-align: center;
             }
             @media(min-width:769px) {
                 .subtitle {
@@ -37,6 +39,7 @@ export function initTextComp() {
             }    
             .body {
                 font-size: 20px;
+                text-align: center;
             }`
             
             shadow.appendChild(div);

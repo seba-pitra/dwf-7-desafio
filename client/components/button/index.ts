@@ -18,8 +18,9 @@ export function initBotonComp() {
                 background-color: #F6F324;
                 border-radius: 5px;
                 font-size: 16px;
-                font-family: 'Acme', sans serif;
-                color: #fff;
+                font-weight: bold;
+                color: #000;
+                margin: 20px 0 20px;
             }
             `;
 
@@ -27,5 +28,5 @@ export function initBotonComp() {
             shadow.appendChild(style);
         }
     }
-    customElements.define("custom-boton", Boton)
+    customElements.define("custom-button", Boton)
 }

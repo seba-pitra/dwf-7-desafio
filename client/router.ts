@@ -60,14 +60,14 @@ export function initRouter(container) {
             }
         }
     }
-    if (location.pathname == "" || "/") {
+    if (location.pathname == "") {
         goTo("/home")
     } else {
         handleRoute(location.pathname);  
     } 
-    if (location.host.includes(".github.io")) {
-        goTo("/apx-mod-5-desario-final/welcome");
-    }
+    // if (location.host.includes(".github.io")) {
+    //     goTo("/apx-mod-5-desario-final/welcome");
+    // }
 
 
     window.onpopstate = function() {
