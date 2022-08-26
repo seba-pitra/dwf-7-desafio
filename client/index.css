@@ -21,6 +21,11 @@ body {
     align-items: center;
 }
 
+.form-datos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .form-your-info {
     display: flex;
     flex-direction: column;

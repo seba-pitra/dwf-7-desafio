@@ -60,7 +60,7 @@ export function initRouter(container) {
             }
         }
     }
-    if (location.pathname == "") {
+    if (location.pathname == "" ) {
         goTo("/home")
     } else {
         handleRoute(location.pathname);  
