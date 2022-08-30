@@ -22,12 +22,19 @@ export function initReport(params) {
         <label for="location-description">¿Donde lo viste?</label>
         <textarea name="location-description" class="textarea" cols="10" rows="5"></textarea>
       </div>
-    </form> 
-    <div class="buttom-container">
+      <div class="button-container">
          <custom-button>Enviar</custom-button>
-    </div>  
+      </div>  
+    </form> 
    </div>
    `
+
+   const button = div.querySelector(".button-container")
+
+   button?.addEventListener("click", (e) => {
+      e.preventDefault()
+      params.goTo("/home")
+   })
    
    return div;
 }

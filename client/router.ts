@@ -1,7 +1,6 @@
 import { initHome } from "./pages/home"
 import { initReport } from "./pages/report"
 import { initSignin } from "./pages/signin";
-import { initPasswordPage } from "./pages/password";
 import { initMyInfo } from "./pages/my-info";
 import { initPostPet } from "./pages/post-pet";
 import { initUpdatePetData } from "./pages/update-pet";
@@ -18,12 +17,8 @@ const routes = [
         component: initReport
     },
     {
-        path: /\/sigin/,
+        path: /\/signin/,
         component: initSignin
-    },
-    {
-        path: /\/password/,
-        component: initPasswordPage
     },
     {
         path: /\/my-info/,

@@ -14,7 +14,6 @@ export function initHeaderComp() {
             header.innerHTML = `
             <div class="header-container">
                 <img src="../img/logo-header.png" class="header-logo">
-
                 <div class="header__burguer">
                     <div class="burguer__item"></div>
                     <div class="burguer__item"></div>
@@ -61,6 +60,7 @@ export function initHeaderComp() {
                 padding: 25px;
                 background-color: #15C6E1;
             }
+            
             .burguer-container {
                 width: 36px;
                 height: 32px;
@@ -106,7 +106,7 @@ export function initHeaderComp() {
                 color: #fff;
                 text-align: right;
                 cursor: pointer;
-                margin: 0;
+                margin: 0
             }
             .burguer-title {
                 text-align: center;
@@ -138,18 +138,22 @@ export function initHeaderComp() {
             const closeWindowButton = header.querySelector(".x");
             const burguer:any = header.querySelector(".header__burguer")
             const image :any = header.querySelector(".header-logo")
+            const headerContainer: any = header.querySelector(".header-container")
             
             
             openWindowButton?.addEventListener("click", (e) => {
                 burguer.style.display = "none"
                 window.style.display = "flex"
                 image.style.display = "none"
+                headerContainer.style.display = "inherit"
+                
             })
         
             closeWindowButton?.addEventListener("click", () => {
                 burguer.style.display = "grid"
                 window.style.display = "none"
                 image.style.display = "inherit"
+                headerContainer.style.display = "flex"
             })
 
             shadow.appendChild(header);
