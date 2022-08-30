@@ -13,7 +13,9 @@ export function initHeaderComp() {
             header.className = "header"
             header.innerHTML = `
             <div class="header-container">
-                <img src="../img/logo-header.png" class="header-logo">
+                <a href="/home">
+                    <img src="../img/logo-header.png" class="header-logo">
+                </a>
                 <div class="header__burguer">
                     <div class="burguer__item"></div>
                     <div class="burguer__item"></div>
@@ -60,7 +62,9 @@ export function initHeaderComp() {
                 padding: 25px;
                 background-color: #15C6E1;
             }
-            
+            .header-logo {
+                cursor:pointer;
+            }
             .burguer-container {
                 width: 36px;
                 height: 32px;
