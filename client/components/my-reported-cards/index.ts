@@ -1,5 +1,5 @@
-export function initCardComp() {
-    class Card extends HTMLElement {
+export function initMyCardComp() {
+    class MyCard extends HTMLElement {
         constructor() {
             super();
             this.render();
@@ -17,8 +17,8 @@ export function initCardComp() {
                     <custom-text>El Soberbio, Misiones</custom-text>
                 </div>
                 <div>
-                <a href="/report">
-                    <custom-text class="report-info">Reportar Informacion</custom-text>
+                <a href="/update-pet">
+                    <custom-text class="report-info">Actualizar datos</custom-text>
                 </a>
                 </div>
             </div>
@@ -46,16 +46,10 @@ export function initCardComp() {
                 flex-direction: column;
             }
             `
-            // const reportInfo = div.querySelector(".report-info")
-            // reportInfo?.addEventListener("click", (e) => {
-            //     e.preventDefault()
-                
-                
-            // })
             
             shadow.appendChild(div);
             shadow.appendChild(style);
         }
     }
-    customElements.define("custom-card", Card)
+    customElements.define("custom-reported-card", MyCard)
 }

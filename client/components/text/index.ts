@@ -38,8 +38,10 @@ export function initTextComp() {
                 }
             }    
             .body {
+                padding-top:10px;
                 font-size: 20px;
                 text-align: center;
+                max-width: 335px
             }`
             
             shadow.appendChild(div);

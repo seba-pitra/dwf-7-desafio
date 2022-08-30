@@ -3,6 +3,7 @@ import { initTextComp } from "./components/text";
 import { initBotonComp }from "./components/button";
 import { initHeaderComp } from "./components/header";
 import { initCardComp } from "./components/card"
+import { initMyCardComp } from "./components/my-reported-cards";
 
 (function() {
     const root = document.querySelector(".root")
@@ -11,6 +12,6 @@ import { initCardComp } from "./components/card"
     initBotonComp();
     initTextComp();
     initCardComp()
-    console.log("hola");
+    initMyCardComp();
     
 })()

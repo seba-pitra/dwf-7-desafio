@@ -53,6 +53,19 @@ body {
     font-size: 24px;
 }
 
+.post-img-container {
+    height: 100px;
+    background-color: red
+}
+
+.post-img {
+    height: 100px;
+}
+
+.link {
+    text-align: center;
+}
+
 
 
 

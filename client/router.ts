@@ -29,13 +29,13 @@ const routes = [
         component: initPostPet
     },
     {
+        path: /\/my-reported-pets/,
+        component: initReportedPets
+    },
+    {
         path: /\/update-pet/,
         component: initUpdatePetData
     },
-    {
-        path: /\/my-reported-pets/,
-        component: initReportedPets
-    }
 ];
 
 
