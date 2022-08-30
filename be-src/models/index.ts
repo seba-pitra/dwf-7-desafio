@@ -3,10 +3,10 @@
 //Este es elarchviso que usaremos para importar los modelos
 
 import { User } from "./users";
-import { Product } from "./product";
+import { Pet } from "./pets";
 import { Auth } from "./auth"
 
-User.hasMany(Product)//definimos la relacion one to many entre User y Product
-Product.belongsTo(User)//aca definimos la relacion entre productos y usuarios
+User.hasMany(Pet)//definimos la relacion one to many entre User y Product
+Pet.belongsTo(User)//aca definimos la relacion entre productos y usuarios
 
-export { User, Product, Auth } 
+export { User, Pet, Auth } 

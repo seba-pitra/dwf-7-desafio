@@ -1,6 +1,6 @@
 import * as express from "express";
 import * as path from "path"
-import { User, Product, Auth } from "./models/index";
+import { User, Pet, Auth } from "./models/index";
 import { updateProfile, getProfile } from "./controllers/users-controllers";
 import { sequelize } from "./models/conection";
 import { jwt } from "jsonwebtoken";

@@ -4,7 +4,7 @@ import { sequelize } from "./conection";
 export class User extends Model {}
 
 User.init({
+    email: DataTypes.STRING,
+    password: DataTypes.STRING,
     fullname: DataTypes.STRING,
-    bio: DataTypes.STRING,
-    pictureURL: DataTypes.STRING
 }, { sequelize, modelName: 'User' });
